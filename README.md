@@ -9,7 +9,7 @@
 
 # 2. Clone this fork to make your own repo
 
-On this repo page is a `code` button. Click it and copy the url. 
+On this forked page is a `code` button. Click it and copy the url. 
 
 In your local terminal, make a new directory and enter it. You can name the directory whatever you want, but make it clear and findable. 
 
@@ -22,7 +22,20 @@ git clone repo-path.git
 code .
 ```
 
-<!-- insert image -->
+Now that the project is opened, follow the cloning instructions:
+```sh
+git init
+git remote add origin https://github.com/ecc-data-science-club/GitHub-Exercise.git
+git status
+```
+
+<img src="assets/cloning.png" width="500">
+
+
+If your main branch doesn't exist, create it:
+```sh
+git switch -c main
+```
 
 
 # 2. In your local application, find and fix the errors in `analysis.py`.

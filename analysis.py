@@ -22,4 +22,5 @@ def main():
     summarize(df, COLUMN)
 
 
-main
+if __name__ == "__main__":
+    main()

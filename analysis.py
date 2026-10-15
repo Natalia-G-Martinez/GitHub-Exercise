@@ -1,25 +1,28 @@
 import pandas as pd
 
-csv_path = "" # TODO: write a path to your csv file
-column = "" # TODO: name of a numeric column in your csv
+df = pd.read_csv('./data/actors.csv') # TODO: write a path to your csv file
+column = "Gross" # TODO: name of a numeric column in your csv
 
-
+"""
 def load_data(path):
-    df = pd.read_csv(path)
-    return df
 
+"""
+
+
+def clean_data(df):
+    return df
 
 def summarize(df, column):
     print("Rows:", len(df))
-    print("Mean:", df[column].mean()
+    print("Mean:", df[column].mean())
     print("Max:", df[column].max())
-    print("Min:", df[column].mn())
+    print("Min:", df[column].min())
 
 
 def main():
-    df = load_data(CSV_PATH)
-    df = clean_data(dataframe)
-    summarize(df, COLUMN)
+    #df = load_data(csv_path)
+    #df = clean_data(df)
+    summarize(df, column)
 
 
 if __name__ == "__main__":
